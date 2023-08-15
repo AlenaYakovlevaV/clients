@@ -1,0 +1,161 @@
+.clients__table {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.client__item {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid rgb(200, 197, 209, .5);;
+    background-color: var(--color-white);
+}
+
+.client__id {
+    display: flex;
+    width: 7%;
+    align-items: center;
+    font-size: 12px;
+    color: var(--color-grey);
+}
+
+.client__fio {
+    width: calc(32% + 5px);
+    font-size: 14px;
+    color: var(--color-mine-shaft);
+}
+
+.client__fio span {
+    display: inline-block;
+}
+
+.client__fio span:not(:last-child) {
+    margin-right: 4px;
+}
+
+.client__create {
+    padding-left: 10px;
+    width: calc(15%);
+}
+
+.client__update {
+    padding-left: 23px;
+    width: calc(15%);
+}
+
+.create__date,
+.update__date {
+    margin-right: 7px;
+    font-size: 14px;
+    color: var(--color-mine-shaft);
+}
+
+.create__time,
+.update__time {
+    font-size: 14px;
+    color: var(--color-grey);
+}
+
+.client__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -10px 30px -10px 30px;
+    max-width: 120px;
+    min-width: 120px;
+}
+
+.client__actions {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.client__actions button {
+    display: inline-block;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-position: left top; /*left center*/
+    background-color: transparent;
+    padding-left: 16px;
+    color: var(--color-mine-shaft);
+}
+
+.client__change {
+    position: relative;
+    margin-right: 30px;
+    background-image: url('./img/edit.svg');
+    transition: color .3s ease-in-out;
+}
+
+.client__delete {
+    position: relative;
+    background-image: url('./img/cancel.svg');
+    transition: color .3s ease-in-out;
+}
+
+.client__change:hover {
+    color: var(--color-heliotrope);
+    transition: color .3s ease-in-out;
+}
+
+.client__delete:hover {
+    color: var(--color-burnt-sienna);
+    transition: color .3s ease-in-out;
+}
+
+.contacts__link {
+    /* display: inline-block; */
+    position: relative;
+    width: 16px;
+    height: 16px;
+    /* margin-bottom: 7px; */
+}
+
+.contacts__link g,
+.contacts__link svg {
+    transition: opacity .3s ease-in-out;
+}
+
+.contacts__link:hover g,
+.contacts__link:hover svg {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.contacts__link:not(:last-child) {
+    margin-right: 7px;
+}
+
+.actions__spinner {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spinner .3s ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.action-wait {
+    background-image: none;
+}
+
+.client__change .actions__spinner svg {
+    stroke: var(--color-heliotrope);
+    fill: none;
+}
+
+.client__delete .actions__spinner svg {
+    stroke: var(--color-burnt-sienna);
+    fill: none;
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

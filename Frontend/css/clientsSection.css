@@ -1,0 +1,171 @@
+.clients {
+    padding-top: 130px;
+}
+
+.clients__heading {
+    margin: 0;
+    margin-bottom: 26px; /*10px*/
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-mine-shaft);
+}
+
+.clients__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.thead-info {
+    padding-left: 20px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.thead-info__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.thead-info__item {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-grey);
+}
+
+.thead-info__item--id, .thead-info__span {
+    color: var(--color-heliotrope);
+}
+
+.thead-info__item--id,
+.thead-info__item--fio,
+.thead-info__item--create,
+.thead-info__item--update {
+    cursor: pointer;
+    user-select: none;
+}
+
+.thead-info__item--id {
+    padding-right: 12px;
+    margin-right: 45px; /*35px*/
+    background-position: right center;
+}
+
+.thead-info__item--fio {
+    padding-left: 45px; /*padding-left*/
+    /*width: calc(32% + 5px); ПРОВЕРИТЬ*/
+    /* margin-right: 100px;               ВЕРНУТЬСЯ!!!!!!!!!!*/
+    background-position: right 17px center; /*right 12px center*/
+}
+
+.thead-info__span {
+    padding-left: 12px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.thead-info__item--create {
+    position: relative;
+    padding-right: 70px;
+    padding-left: 188px;
+}
+
+.thead-info__item--create::before {
+    content: 'создания';
+    position: absolute;
+    right: 0;
+    top: 1px; /*0*/
+    margin-right: 12px;
+}
+
+
+.thead-info__item--update {
+    position: relative;
+    padding-right: 80px;
+    margin-right: 28px;
+    padding-left: 23px;
+}
+
+.thead-info__item--update::before {
+    content: 'изменения';
+    position: absolute;
+    right: 0;
+    top: 1px; /*0*/
+    margin-right: 13px;
+}
+
+.clients__table {
+    position: relative;
+}
+
+.thead-info__item--contacts {
+    /* padding-left: 30px; */
+    padding-left: 21px;
+    max-width: 50px;
+}
+
+.thead-info__item--actions {
+    padding-left: 121px;
+}
+
+.clients__tbody {
+    position: relative;
+}
+
+.clients__btn {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 12.5px 26.5px;
+    align-self: center;
+    /* width: 216px; */
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid var(--color-heliotrope);
+    color: var(--color-heliotrope);
+}
+
+.clients__btn svg {
+    display: block;
+    margin-right: 10px;
+    transition: fill .2s ease-out;
+    fill: var(--color-heliotrope);
+}
+
+.clients__btn:hover {
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    background-color: var(--color-melrose);
+    color: var(--color-white);
+}
+
+.clients__btn:hover svg {
+    transition: fill .2s ease-in;
+    fill: var(--color-white);
+}
+
+.create__span, .update__span {
+    display: inline-block;
+    width: 12px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('./img/arrow_down.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sort-up, .sort-down {
+    background-repeat: no-repeat;
+}
+
+.sort-up {
+    background-image: url('./img/arrow_up.svg');
+}
+
+.sort-down {
+    background-image: url('./img/arrow_down.svg');
+}
+
+.thead-info__item--create,
+.thead-info__item--update {
+    background-image: none;
+}

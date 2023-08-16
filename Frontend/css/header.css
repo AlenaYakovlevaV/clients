@@ -1,0 +1,37 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3.3862948417663574px 5.643825054168701px 0px rgba(176, 190, 197, 0.32), 0px 9.030119895935059px 27.09035873413086px 0px rgba(176, 190, 197, 0.32);
+    background-color: var(--color-white);
+}
+
+.header__container {
+    padding: 20px;
+    max-width: 1186px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    display: block;
+    margin-right: 53px;
+}
+
+.header__form {
+    width: 100%;
+}
+
+.header__input {
+    height: 44px;
+    width: 100%;
+    max-width: 581px;
+    padding: 12px 16px;
+    border: 1px solid rgba(51, 51, 51, 0.20);;
+}
+
+.header__input::placeholder {
+    color: var(--color-grey);
+    font-size: 14px;
+}

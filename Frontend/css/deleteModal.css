@@ -1,0 +1,39 @@
+.delete-modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-modal__title {
+    margin-bottom: 11px;
+}
+
+.delete-modal__text {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-align: center;
+    max-width: 275px;
+    color: var(--color-mine-shaft);
+}
+
+.delete-modal__delete,
+.delete-modal__back {
+    display: block;
+}
+
+.delete-modal__delete {
+    position: relative;
+    padding: 17px 35px;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.delete-modal__back {
+    font-weight: normal;
+    align-self: center;
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--color-mine-shaft);
+    color: var(--color-mine-shaft);
+}

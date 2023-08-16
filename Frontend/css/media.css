@@ -1,0 +1,72 @@
+@media all and (max-width: 730px) {
+    .find-list {
+        min-width: 420px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .find-list {
+        min-width: 50%;
+    }
+
+    .modal__content {
+        max-width: 375px;
+    }
+
+    .modal__form {
+        max-width: 315px;
+    }
+
+    .contact {
+        max-width: 315px;
+    }
+
+    .contact input {
+        padding-left: 6px;
+        
+    }
+
+    .modal__close {
+        right: 0;
+        top: 2px;
+    }
+
+    .delete-modal__content {
+        width: 300px;
+    }
+
+}
+
+@media all and (max-width: 390px) {
+    .modal__content {
+        max-width: 300px;
+    }
+
+    .modal__form {
+        max-width: 240px;
+    }
+
+    .contact {
+        max-width: 270px;
+        justify-content: center;
+    }
+
+    .contact input {
+        padding-left: 6px;
+        justify-content: center;    
+        width: 55%;   
+    }
+
+    .contact__name {
+        font-size: 12px;
+    }
+
+    .find-list {
+        min-width: 176px;
+    }
+
+    .container, .header {
+        min-width: 320px;
+    }
+}
+
